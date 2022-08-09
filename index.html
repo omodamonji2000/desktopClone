@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkShop Desk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="head" id="head">
+            <div class="headicon">
+                <i class='bx bx-desktop'></i>
+                <i class='bx bxs-file-blank'></i>
+                <i class='bx bx-folder'></i>
+                <i class='bx bx-chevron-down-circle'></i>
+                <span>Thsi PC</span>
+            </div>
+            <div class="onoff">
+                <i class='bx bx-window' ></i>
+                <i class='bx bx-windows' id="minimize" onclick="myfunction3()"></i>
+                <i class='bx bx-window-close' id="close" onclick="myfunction4()"></i>
+            </div>
+        </nav>
+        <div class="nav" id="nav">
+            <div class="fronttag">
+                <input type="button" value="File" class="file">
+                <input type="button" id="computer" onclick="myfunction1() " value="Computer" class="computer">
+                <input type="button" id="view" onclick="myfunction2() " value="View" class="view">
+            </div>
+            <div class="backicon">
+                <i class='bx bx-chevron-up-circle'></i>
+                <i class='bx bxs-help-circle'></i>
+            </div>
+        </div>
+    </header>
+    <section class="body" id="table">
+        <div class="edititem">
+            <table class="table table-light"  >
+                <tbody>
+                    <tr>
+                        <td id="bodyicon">
+                            <span><i class='bx bxs-file-pdf'></i><br> Properties</span>
+                            <span><i class='bx bxs-file-pdf'></i><br>Open</span>
+                            <span><i class='bx bxs-file-import' ></i><br>Rename</span>
+                        </td>
+                        <td id="bodyicon1">
+                            <span><i class='bx bxs-file-pdf'></i><br> Properties</span>
+                            <span><i class='bx bxs-file-pdf'></i><br>Open</span>
+                            <span><i class='bx bxs-file-import' ></i><br>Rename</span>
+                        </td>
+                        <td id="bodyicon2">
+                            <span><i class='bx bxs-file-pdf'></i><br> Properties</span>
+                            <span class="lasticon"><i class='bx bxs-file-pdf'>Unstall or change program</i><i class='bx bxs-file-pdf'>System properties</i><i class='bx bxs-file-pdf'>Magnament</i></span>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="sectwo">
+        <div class="grid-container">
+            <div class="item0">
+                <i class='bx bx-chevron-left-circle'></i>          
+                <i class='bx bx-chevron-right-circle'></i>   
+                <i class='bx bx-chevron-down-circle'></i>  
+                <i class='bx bx-chevron-up-circle'></i>
+            </div>
+            <div class="item1">
+                <span id="onestatus">..</span>
+                <div class="headicon">
+                    <i class='bx bx-chevron-down-circle'></i><i class='bx bx-refresh' ></i>
+                </div>
+            </div>
+            <div class="item2" id="item2">
+                <span  id="quick" ondblclick="myfunction5()"><i class='bx bx-chevron-right' ></i><a><i class='bx bxs-star'></i>Quick access</a></span>
+
+                <span  id="thispc" onpointerenter="myfunction7()" onclick="myfunction6()"><i class='bx bx-chevron-right' ></i><i class='bx bx-desktop'></i>This PC</a></span>
+            <div id="subpc">
+                <span id="cloud"><i class='bx bx-chevron-right' ></i><a href="#"><i class='bx bxl-soundcloud'></i>Cloud</a></span>
+                <span id="download"><i class='bx bx-chevron-right' ></i><a href="#"><i class='bx bxs-downvote'></i>Download</a></span>
+                <span id="music"><i class='bx bx-chevron-right' ></i><a href="#"><i class='bx bxs-music'></i>Musics</a></span>
+                <span id="picture"><i class='bx bx-chevron-right' ></i><a href="#"><i class='bx bx-photo-album'></i>Pictures</a></span>
+                <span id="video"><i class='bx bx-chevron-right' ></i><a href="#"><i class='bx bxs-videos'></i>Videos</a></span>
+            </div>
+            <span id="network"><i class='bx bx-chevron-right' ></i><a href="#"><i class='bx bx-planet'></i>Network</a></span>
+                
+            </div>
+            
+            <div class="item5" id="item5" >
+                <fieldset style="height: 100%; text-align: left;">
+                    <legend>^Folder</legend>
+                </fieldset>
+            </div>
+            <div class="item6">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search This Pc">
+            </div>
+            <div class="item3" id="item3">
+                <fieldset style="height: 100%; text-align: left;">
+                    <legend>Drives and drive(2)</legend>
+                    <div class="disc">
+                        <div class="volc">
+                            <span>Local Dick(C:)</span>
+                            <span> <i class='bx bxs-folder-plus'></i><i class='bx bxl-windows' ></i><progress value="80" max="100"></progress></span>
+                            <span>1000GB free from 1200GB</span>
+                        </div>
+                        <div class="vold">
+                            <span>Local Dick(D:)</span>
+                            <span><i class='bx bxs-folder-plus'></i><progress value="40" max="100"></progress> </span>
+                            <span>800GB free from 100GB</span>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="item4">
+                <span>..</span>
+                <div class="footicon">
+                    <i class='bx bx-menu-alt-left' ></i>
+                    <i class='bx bx-photo-album'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- need icon -->
+    <i class='bx bx-desktop'></i>
+    <i class='bx bxs-file-blank'></i>
+    <i class='bx bx-folder'></i>
+    <i class='bx bx-window' ></i>
+    <i class='bx bx-windows' ></i>
+    <i class='bx bx-window-close'></i>
+    <i class='bx bx-star'></i><i class='bx bxs-star' ></i>
+    <i class='bx bxs-cloud' ></i><i class='bx bxl-soundcloud' ></i>
+    <i class='bx bxs-download'></i>
+    <i class='bx bxs-downvote'></i>
+    <i class='bx bxs-music'></i><i class='bx bx-music' ></i>
+    <i class='bx bx-photo-album'></i><i class='bx bxs-photo-album' ></i>
+    <i class='bx bxs-videos'></i>
+    <i class='bx bx-planet'></i>
+    <i class='bx bx-search'></i>
+    <i class='bx bx-refresh' ></i>
+    <i class='bx bx-cube-alt' ></i>
+    <i class='bx bxs-calculator' ></i><i class='bx bx-calculator' ></i>
+    <i class='bx bx-code-curly' ></i>
+    <i class='bx bx-cut' ></i>
+    <i class='bx bxl-windows' ></i>
+    <i class='bx bx-chevron-down'></i>
+    <i class='bx bx-chevron-up' ></i>
+    <i class='bx bx-chevron-left' ></i>
+    <i class='bx bx-chevron-right' ></i>
+    <i class='bx bx-menu-alt-left' ></i>
+</body>
+<script src="./function.js"></script>
+</html>
